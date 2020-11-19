@@ -15,6 +15,7 @@
 		F3FBFD2D2566C29E00E56D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FBFD2B2566C29E00E56D72 /* LaunchScreen.storyboard */; };
 		F3FBFD382566C29E00E56D72 /* loodos_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD372566C29E00E56D72 /* loodos_challengeTests.swift */; };
 		F3FBFD432566C29E00E56D72 /* loodos_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD422566C29E00E56D72 /* loodos_challengeUITests.swift */; };
+		F3FBFD572566C40100E56D72 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F3FBFD562566C40100E56D72 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F3FBFD3E2566C29E00E56D72 /* loodos-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "loodos-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBFD422566C29E00E56D72 /* loodos_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loodos_challengeUITests.swift; sourceTree = "<group>"; };
 		F3FBFD442566C29E00E56D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FBFD562566C40100E56D72 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				F3FBFD362566C29E00E56D72 /* loodos-challengeTests */,
 				F3FBFD412566C29E00E56D72 /* loodos-challengeUITests */,
 				F3FBFD1E2566C29C00E56D72 /* Products */,
+				F3FBFD562566C40100E56D72 /* Podfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +236,7 @@
 			files = (
 				F3FBFD2D2566C29E00E56D72 /* LaunchScreen.storyboard in Resources */,
 				F3FBFD2A2566C29E00E56D72 /* Assets.xcassets in Resources */,
+				F3FBFD572566C40100E56D72 /* Podfile in Resources */,
 				F3FBFD282566C29C00E56D72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
