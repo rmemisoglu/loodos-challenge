@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B9D0E4DFF5964F777BF4CDB /* Pods_loodos_challenge_loodos_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DE48B5D8E56A6E6CB734AE /* Pods_loodos_challenge_loodos_challengeUITests.framework */; };
+		39A88F8C7D8FC82BC19A5A3F /* Pods_loodos_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F611ACC338FB3A92561A5C /* Pods_loodos_challengeTests.framework */; };
+		5F8667CD73EE3780D7497164 /* Pods_loodos_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFCE80D54C2C091E2F73F42 /* Pods_loodos_challenge.framework */; };
 		F3FBFD212566C29C00E56D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD202566C29C00E56D72 /* AppDelegate.swift */; };
 		F3FBFD232566C29C00E56D72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD222566C29C00E56D72 /* SceneDelegate.swift */; };
 		F3FBFD252566C29C00E56D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD242566C29C00E56D72 /* ViewController.swift */; };
@@ -36,6 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06DE48B5D8E56A6E6CB734AE /* Pods_loodos_challenge_loodos_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loodos_challenge_loodos_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FFCE80D54C2C091E2F73F42 /* Pods_loodos_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loodos_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37AB4B833FD3A9AFB36138E9 /* Pods-loodos-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-loodos-challengeTests/Pods-loodos-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		44F611ACC338FB3A92561A5C /* Pods_loodos_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loodos_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53795EDECEDE592BF9F52161 /* Pods-loodos-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-loodos-challengeTests/Pods-loodos-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71903BD4D813DF5472CB82FC /* Pods-loodos-challenge-loodos-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge-loodos-challengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-loodos-challenge-loodos-challengeUITests/Pods-loodos-challenge-loodos-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		98469B8FC5901DA6C1B8EA3B /* Pods-loodos-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge.release.xcconfig"; path = "Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		C571ACCBE3E18D462B4F447E /* Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-loodos-challenge-loodos-challengeUITests/Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD28BAE57085D79DD3E5156C /* Pods-loodos-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge.debug.xcconfig"; path = "Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		F3FBFD1D2566C29C00E56D72 /* loodos-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loodos-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBFD202566C29C00E56D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FBFD222566C29C00E56D72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8667CD73EE3780D7497164 /* Pods_loodos_challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A88F8C7D8FC82BC19A5A3F /* Pods_loodos_challengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9D0E4DFF5964F777BF4CDB /* Pods_loodos_challenge_loodos_challengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06673D61C0A1E7FE8FF424FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FFCE80D54C2C091E2F73F42 /* Pods_loodos_challenge.framework */,
+				06DE48B5D8E56A6E6CB734AE /* Pods_loodos_challenge_loodos_challengeUITests.framework */,
+				44F611ACC338FB3A92561A5C /* Pods_loodos_challengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9E5731CC2D23622FE4E2804 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD28BAE57085D79DD3E5156C /* Pods-loodos-challenge.debug.xcconfig */,
+				98469B8FC5901DA6C1B8EA3B /* Pods-loodos-challenge.release.xcconfig */,
+				71903BD4D813DF5472CB82FC /* Pods-loodos-challenge-loodos-challengeUITests.debug.xcconfig */,
+				C571ACCBE3E18D462B4F447E /* Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig */,
+				53795EDECEDE592BF9F52161 /* Pods-loodos-challengeTests.debug.xcconfig */,
+				37AB4B833FD3A9AFB36138E9 /* Pods-loodos-challengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F3FBFD142566C29C00E56D72 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +125,8 @@
 				F3FBFD412566C29E00E56D72 /* loodos-challengeUITests */,
 				F3FBFD1E2566C29C00E56D72 /* Products */,
 				F3FBFD562566C40100E56D72 /* Podfile */,
+				E9E5731CC2D23622FE4E2804 /* Pods */,
+				06673D61C0A1E7FE8FF424FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3FBFD472566C29E00E56D72 /* Build configuration list for PBXNativeTarget "loodos-challenge" */;
 			buildPhases = (
+				B8E9D9F829D8E943A87884F9 /* [CP] Check Pods Manifest.lock */,
 				F3FBFD192566C29C00E56D72 /* Sources */,
 				F3FBFD1A2566C29C00E56D72 /* Frameworks */,
 				F3FBFD1B2566C29C00E56D72 /* Resources */,
+				3539941FD8CF42E5F9E500F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3FBFD4A2566C29E00E56D72 /* Build configuration list for PBXNativeTarget "loodos-challengeTests" */;
 			buildPhases = (
+				F58445DC77CD629DEB1494DB /* [CP] Check Pods Manifest.lock */,
 				F3FBFD2F2566C29E00E56D72 /* Sources */,
 				F3FBFD302566C29E00E56D72 /* Frameworks */,
 				F3FBFD312566C29E00E56D72 /* Resources */,
@@ -173,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3FBFD4D2566C29E00E56D72 /* Build configuration list for PBXNativeTarget "loodos-challengeUITests" */;
 			buildPhases = (
+				14FBC92118C492782FF8936B /* [CP] Check Pods Manifest.lock */,
 				F3FBFD3A2566C29E00E56D72 /* Sources */,
 				F3FBFD3B2566C29E00E56D72 /* Frameworks */,
 				F3FBFD3C2566C29E00E56D72 /* Resources */,
+				DA308343F2DD263D12B91D0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +302,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14FBC92118C492782FF8936B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-loodos-challenge-loodos-challengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3539941FD8CF42E5F9E500F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E9D9F829D8E943A87884F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-loodos-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA308343F2DD263D12B91D0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loodos-challenge-loodos-challengeUITests/Pods-loodos-challenge-loodos-challengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-loodos-challenge-loodos-challengeUITests/Pods-loodos-challenge-loodos-challengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-loodos-challenge-loodos-challengeUITests/Pods-loodos-challenge-loodos-challengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58445DC77CD629DEB1494DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-loodos-challengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3FBFD192566C29C00E56D72 /* Sources */ = {
@@ -437,6 +586,7 @@
 		};
 		F3FBFD482566C29E00E56D72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD28BAE57085D79DD3E5156C /* Pods-loodos-challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +606,7 @@
 		};
 		F3FBFD492566C29E00E56D72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98469B8FC5901DA6C1B8EA3B /* Pods-loodos-challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +626,7 @@
 		};
 		F3FBFD4B2566C29E00E56D72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53795EDECEDE592BF9F52161 /* Pods-loodos-challengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +649,7 @@
 		};
 		F3FBFD4C2566C29E00E56D72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37AB4B833FD3A9AFB36138E9 /* Pods-loodos-challengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +672,7 @@
 		};
 		F3FBFD4E2566C29E00E56D72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71903BD4D813DF5472CB82FC /* Pods-loodos-challenge-loodos-challengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +693,7 @@
 		};
 		F3FBFD4F2566C29E00E56D72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C571ACCBE3E18D462B4F447E /* Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
