@@ -3,22 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1B9D0E4DFF5964F777BF4CDB /* Pods_loodos_challenge_loodos_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DE48B5D8E56A6E6CB734AE /* Pods_loodos_challenge_loodos_challengeUITests.framework */; };
 		39A88F8C7D8FC82BC19A5A3F /* Pods_loodos_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F611ACC338FB3A92561A5C /* Pods_loodos_challengeTests.framework */; };
 		5F8667CD73EE3780D7497164 /* Pods_loodos_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFCE80D54C2C091E2F73F42 /* Pods_loodos_challenge.framework */; };
+		F36CDA412566FCCD00D3DE51 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CDA402566FCCD00D3DE51 /* LaunchView.swift */; };
 		F3FBFD212566C29C00E56D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD202566C29C00E56D72 /* AppDelegate.swift */; };
 		F3FBFD232566C29C00E56D72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD222566C29C00E56D72 /* SceneDelegate.swift */; };
 		F3FBFD252566C29C00E56D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD242566C29C00E56D72 /* ViewController.swift */; };
 		F3FBFD282566C29C00E56D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FBFD262566C29C00E56D72 /* Main.storyboard */; };
 		F3FBFD2A2566C29E00E56D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FBFD292566C29E00E56D72 /* Assets.xcassets */; };
-		F3FBFD2D2566C29E00E56D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FBFD2B2566C29E00E56D72 /* LaunchScreen.storyboard */; };
 		F3FBFD382566C29E00E56D72 /* loodos_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD372566C29E00E56D72 /* loodos_challengeTests.swift */; };
 		F3FBFD432566C29E00E56D72 /* loodos_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD422566C29E00E56D72 /* loodos_challengeUITests.swift */; };
 		F3FBFD572566C40100E56D72 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F3FBFD562566C40100E56D72 /* Podfile */; };
+		F3FBFD8B2566EF6D00E56D72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3FBFD8A2566EF6D00E56D72 /* GoogleService-Info.plist */; };
+		F3FBFD932566F06900E56D72 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD922566F06900E56D72 /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +50,13 @@
 		98469B8FC5901DA6C1B8EA3B /* Pods-loodos-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge.release.xcconfig"; path = "Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge.release.xcconfig"; sourceTree = "<group>"; };
 		C571ACCBE3E18D462B4F447E /* Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-loodos-challenge-loodos-challengeUITests/Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CD28BAE57085D79DD3E5156C /* Pods-loodos-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge.debug.xcconfig"; path = "Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		F36CDA402566FCCD00D3DE51 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		F3FBFD1D2566C29C00E56D72 /* loodos-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loodos-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBFD202566C29C00E56D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FBFD222566C29C00E56D72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F3FBFD242566C29C00E56D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3FBFD272566C29C00E56D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3FBFD292566C29E00E56D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3FBFD2C2566C29E00E56D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3FBFD2E2566C29E00E56D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3FBFD332566C29E00E56D72 /* loodos-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "loodos-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBFD372566C29E00E56D72 /* loodos_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loodos_challengeTests.swift; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 		F3FBFD422566C29E00E56D72 /* loodos_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loodos_challengeUITests.swift; sourceTree = "<group>"; };
 		F3FBFD442566C29E00E56D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3FBFD562566C40100E56D72 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F3FBFD8A2566EF6D00E56D72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3FBFD922566F06900E56D72 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +117,6 @@
 				53795EDECEDE592BF9F52161 /* Pods-loodos-challengeTests.debug.xcconfig */,
 				37AB4B833FD3A9AFB36138E9 /* Pods-loodos-challengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,8 +151,10 @@
 				F3FBFD242566C29C00E56D72 /* ViewController.swift */,
 				F3FBFD262566C29C00E56D72 /* Main.storyboard */,
 				F3FBFD292566C29E00E56D72 /* Assets.xcassets */,
-				F3FBFD2B2566C29E00E56D72 /* LaunchScreen.storyboard */,
 				F3FBFD2E2566C29E00E56D72 /* Info.plist */,
+				F3FBFD8A2566EF6D00E56D72 /* GoogleService-Info.plist */,
+				F3FBFD922566F06900E56D72 /* LaunchScreenViewController.swift */,
+				F36CDA402566FCCD00D3DE51 /* LaunchView.swift */,
 			);
 			path = "loodos-challenge";
 			sourceTree = "<group>";
@@ -280,10 +285,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3FBFD2D2566C29E00E56D72 /* LaunchScreen.storyboard in Resources */,
 				F3FBFD2A2566C29E00E56D72 /* Assets.xcassets in Resources */,
 				F3FBFD572566C40100E56D72 /* Podfile in Resources */,
 				F3FBFD282566C29C00E56D72 /* Main.storyboard in Resources */,
+				F3FBFD8B2566EF6D00E56D72 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +417,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3FBFD252566C29C00E56D72 /* ViewController.swift in Sources */,
+				F36CDA412566FCCD00D3DE51 /* LaunchView.swift in Sources */,
 				F3FBFD212566C29C00E56D72 /* AppDelegate.swift in Sources */,
+				F3FBFD932566F06900E56D72 /* LaunchScreenViewController.swift in Sources */,
 				F3FBFD232566C29C00E56D72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,14 +462,6 @@
 				F3FBFD272566C29C00E56D72 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F3FBFD2B2566C29E00E56D72 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3FBFD2C2566C29E00E56D72 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
