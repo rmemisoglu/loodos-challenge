@@ -20,3 +20,15 @@ class BaseViewController: UIViewController {
         loadingViewController.remove()
     }
 }
+
+class BaseTableViewController: UITableViewController {
+    // MARK: - Views
+    private let loadingViewController = LoadingViewController()
+    func showLoadingView() {
+        add(loadingViewController)
+    }
+    
+    func removeLoadingView() {
+        loadingViewController.remove()
+    }
+}

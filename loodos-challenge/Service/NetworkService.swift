@@ -11,6 +11,7 @@ import Alamofire
 // MARK: - Protocols
 protocol APIService {
     func getFilms(with title: String, completion: @escaping (Result<SearchResponse, AFError>) -> ())
+    func getFilmDetail(by imdbId: String, completion: @escaping (Result<MovieResponse, AFError>) -> ())
 }
 
 class NetworkService: APIService {
@@ -58,6 +59,28 @@ class NetworkService: APIService {
             URLQueryItem(name: "apiKey", value: PersistentManager.shared.apiKey),
             //URLQueryItem(name: "t", value: title),
             URLQueryItem(name: "s", value: title),
+            URLQueryItem(name: "plot", value: "full")
+        ]
+        
+        guard let url = urlComponents.url else { return }
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = HttpMethod.get.rawValue
+        
+        urlRequest.allHTTPHeaderFields = headers
+        
+        requestServiceWithAlamofire(urlRequest: urlRequest, completion: completion)
+    }
+    
+    func getFilmDetail(by imdbId: String, completion: @escaping (Result<MovieResponse, AFError>) -> ()) {
+        let serviceUrl = baseUrl
+        
+        guard var urlComponents = URLComponents(string: serviceUrl.absoluteString) else {
+            return
+        }
+        urlComponents.queryItems = [
+            URLQueryItem(name: "apiKey", value: PersistentManager.shared.apiKey),
+            URLQueryItem(name: "i", value: imdbId),
             URLQueryItem(name: "plot", value: "full")
         ]
         

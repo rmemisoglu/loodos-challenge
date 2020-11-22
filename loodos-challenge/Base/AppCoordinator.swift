@@ -10,6 +10,7 @@ import UIKit
 class AppCoordinator: Coordinator {
     enum Identifier: String {
         case homeViewController = "HomeViewController"
+        case filmDetailViewController = "FilmDetailViewController"
     }
     
     static func mainStoryboard() -> UIStoryboard {
@@ -17,6 +18,9 @@ class AppCoordinator: Coordinator {
     }
     static func homeViewController() -> HomeViewController {
         return mainStoryboard().instantiateViewController(withIdentifier: Identifier.homeViewController.rawValue) as! HomeViewController
+    }
+    static func filmDetailViewController() -> FilmDetailViewController {
+        return mainStoryboard().instantiateViewController(withIdentifier: Identifier.filmDetailViewController.rawValue) as! FilmDetailViewController
     }
     
 }

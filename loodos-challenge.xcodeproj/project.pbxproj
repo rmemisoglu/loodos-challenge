@@ -11,6 +11,8 @@
 		39A88F8C7D8FC82BC19A5A3F /* Pods_loodos_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F611ACC338FB3A92561A5C /* Pods_loodos_challengeTests.framework */; };
 		5F8667CD73EE3780D7497164 /* Pods_loodos_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFCE80D54C2C091E2F73F42 /* Pods_loodos_challenge.framework */; };
 		F3056A4C2568123D0089150C /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3056A4B2568123D0089150C /* ImageCache.swift */; };
+		F324153E256A75A40039BE25 /* FilmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F324153D256A75A40039BE25 /* FilmDetailViewController.swift */; };
+		F3676697256AF5E800A9AF2B /* FilmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3676696256AF5E800A9AF2B /* FilmDetailViewModel.swift */; };
 		F3D919CB2567D3F2003EE171 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919CA2567D3F2003EE171 /* AppCoordinator.swift */; };
 		F3D919D32567D419003EE171 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919D22567D419003EE171 /* BaseViewController.swift */; };
 		F3D919D82567D429003EE171 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919D72567D429003EE171 /* BaseViewModel.swift */; };
@@ -64,6 +66,8 @@
 		C571ACCBE3E18D462B4F447E /* Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-loodos-challenge-loodos-challengeUITests/Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CD28BAE57085D79DD3E5156C /* Pods-loodos-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge.debug.xcconfig"; path = "Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		F3056A4B2568123D0089150C /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		F324153D256A75A40039BE25 /* FilmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewController.swift; sourceTree = "<group>"; };
+		F3676696256AF5E800A9AF2B /* FilmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModel.swift; sourceTree = "<group>"; };
 		F3D919CA2567D3F2003EE171 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F3D919D22567D419003EE171 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F3D919D72567D429003EE171 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -146,6 +150,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F3241542256A855D0039BE25 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3D91A2F2567F319003EE171 /* FilmsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F3D919C92567D3E0003EE171 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +180,8 @@
 				F3FBFD922566F06900E56D72 /* LaunchScreenViewController.swift */,
 				F3FBFD242566C29C00E56D72 /* HomeViewController.swift */,
 				F3D91A142567EB01003EE171 /* HomeViewModel.swift */,
-				F3D91A2F2567F319003EE171 /* FilmsTableViewCell.swift */,
+				F324153D256A75A40039BE25 /* FilmDetailViewController.swift */,
+				F3676696256AF5E800A9AF2B /* FilmDetailViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +247,7 @@
 				F3D919FC2567E149003EE171 /* Main */,
 				F3D919FB2567E123003EE171 /* View */,
 				F3D919C92567D3E0003EE171 /* Base */,
+				F3241542256A855D0039BE25 /* Cell */,
 			);
 			path = "loodos-challenge";
 			sourceTree = "<group>";
@@ -508,11 +522,13 @@
 				F3FBFD932566F06900E56D72 /* LaunchScreenViewController.swift in Sources */,
 				F3D919D82567D429003EE171 /* BaseViewModel.swift in Sources */,
 				F3056A4C2568123D0089150C /* ImageCache.swift in Sources */,
+				F324153E256A75A40039BE25 /* FilmDetailViewController.swift in Sources */,
 				F3D919D32567D419003EE171 /* BaseViewController.swift in Sources */,
 				F3D91A302567F319003EE171 /* FilmsTableViewCell.swift in Sources */,
 				F3D919F42567D4AB003EE171 /* LoadingViewController.swift in Sources */,
 				F3D91A022567E1C3003EE171 /* NetworkService.swift in Sources */,
 				F3FBFD232566C29C00E56D72 /* SceneDelegate.swift in Sources */,
+				F3676697256AF5E800A9AF2B /* FilmDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,7 @@ class HomeViewController: BaseViewController {
     
     func setupView(){
         navigationItem.title = "SEARCH FILMS"
-        navigationController?.navigationBar.prefersLargeTitles = true
+        //navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     private func setupViewModel() {
@@ -37,6 +37,14 @@ class HomeViewController: BaseViewController {
         //for listen states
         viewModel.state.bind { [unowned self] in
             self.stateAnimate($0)
+        }
+        
+        viewModel.routeFilmDetail.bind { [unowned self] in
+            guard let filmDetailViewModel = $0 else { return }
+            let vc = AppCoordinator.filmDetailViewController()
+            vc.viewModel = filmDetailViewModel
+            self.present(vc, animated: true, completion: nil)
+            //navigationController?.pushViewController(vc, animated: true)
         }
     }
     
@@ -113,6 +121,12 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         
         cell.configure(with: item)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let imdbId = viewModel.results[indexPath.row].imdbID else { return }
+        
+        viewModel.routeFilmDetail.value = FilmDetailViewModel(service: NetworkService.shared, imdbId: imdbId)
     }
 }
 
