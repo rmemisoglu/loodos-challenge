@@ -8,9 +8,9 @@
 import Foundation
 class FilmDetailViewModel: BaseViewModel{
     private let service: APIService
-    var results = [MovieResponse]()
     var details: Dynamic<MovieResponse?> = Dynamic(nil)
     var imdbId = Constants.Default.empty
+    
     init(service: APIService, imdbId: String) {
         self.service = service
         self.imdbId = imdbId
@@ -27,6 +27,7 @@ class FilmDetailViewModel: BaseViewModel{
                     self.state.value = .populate
                 } else if data.response == "False"{
                     print(data)
+                    self.showError(message: data.error ?? "No Result")
                     self.state.value = .error
                 }
             case .failure(let error):
@@ -36,7 +37,7 @@ class FilmDetailViewModel: BaseViewModel{
         }
     }
 
-    private func showError(title: String? = nil, message: String? = nil) {
+    private func showError(message: String) {
         errorState.value = .error(message: message)
     }
 }

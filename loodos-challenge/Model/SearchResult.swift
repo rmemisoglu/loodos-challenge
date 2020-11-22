@@ -6,19 +6,21 @@
 //
 
 import Foundation
-struct SearchResponse: Codable {
-    var search: [MovieResponse]
-    var totalResults: String
+struct SearchResponse: Model {
+    var search: [MovieResponse]?
+    var totalResults: String?
     var response: String
+    var error: String?
 
     enum CodingKeys: String, CodingKey {
         case search = "Search"
         case totalResults
         case response = "Response"
+        case error = "Error"
     }
 }
 
-struct MovieResponse: Codable {
+struct MovieResponse: Model {
     var title, year, rated, released: String?
     var runtime, genre, director, writer: String?
     var actors, plot, language, country: String?
@@ -26,7 +28,7 @@ struct MovieResponse: Codable {
     var poster: String
     var ratings: [Rating]?
     var metascore, imdbRating, imdbVotes, imdbID: String?
-    var type, totalSeasons, response: String?
+    var type, totalSeasons, response, error: String?
 
     enum CodingKeys: String, CodingKey {
         case title = "Title"
@@ -49,6 +51,7 @@ struct MovieResponse: Codable {
         case type = "Type"
         case totalSeasons
         case response = "Response"
+        case error = "Error"
     }
 }
 

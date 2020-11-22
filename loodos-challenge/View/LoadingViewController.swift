@@ -20,9 +20,12 @@ class LoadingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.2)
-        
-        activityIndicator.frame = CGRect(x: (view.frame.size.width/2), y: view.frame.size.width/2, width: 0, height: 0 )
+        //activityIndicator.frame = CGRect(x: (view.frame.size.width/2), y: view.frame.size.width/2, width: 0, height: 0 )
         view.addSubview(activityIndicator)
+        NSLayoutConstraint.activate([
+            activityIndicator.safeCenterXAnchor.constraint(equalTo: view.safeCenterXAnchor),
+            activityIndicator.safeCenterYAnchor.constraint(equalTo: view.safeCenterYAnchor)
+            ])
     }
     
     override func viewDidAppear(_ animated: Bool) {

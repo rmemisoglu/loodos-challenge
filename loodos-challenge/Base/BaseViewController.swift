@@ -19,6 +19,24 @@ class BaseViewController: UIViewController {
     func removeLoadingView() {
         loadingViewController.remove()
     }
+    
+    func handleAlert(_ errorState: ErrorState){
+        switch errorState {
+            case .error(let message):
+                showAlert(message)
+        default:
+            debugPrint("Default switch \(#function)")
+        }
+    }
+    //show handling error
+    func showAlert(_ message: String){
+        let alertController = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+            print("OK");
+        }
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
+    }
 }
 
 class BaseTableViewController: UITableViewController {
@@ -30,5 +48,23 @@ class BaseTableViewController: UITableViewController {
     
     func removeLoadingView() {
         loadingViewController.remove()
+    }
+    
+    func handleAlert(_ errorState: ErrorState){
+        switch errorState {
+            case .error(let message):
+                showAlert(message)
+        default:
+            debugPrint("Default switch \(#function)")
+        }
+    }
+    //show handling error
+    func showAlert(_ message: String){
+        let alertController = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+            print("OK");
+        }
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
     }
 }

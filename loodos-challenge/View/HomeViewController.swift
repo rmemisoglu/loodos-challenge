@@ -39,6 +39,10 @@ class HomeViewController: BaseViewController {
             self.stateAnimate($0)
         }
         
+        viewModel.errorState.bind { [unowned self] in
+            self.handleAlert($0)
+        }
+        
         viewModel.routeFilmDetail.bind { [unowned self] in
             guard let filmDetailViewModel = $0 else { return }
             let vc = AppCoordinator.filmDetailViewController()
@@ -84,7 +88,7 @@ class HomeViewController: BaseViewController {
     deinit {
         viewModel.state.unbind()
         viewModel.errorState.unbind()
-        viewModel.details.unbind()
+        viewModel.routeFilmDetail.unbind()
     }
     
     private func stateAnimate(_ state: TableViewState) {
@@ -105,7 +109,7 @@ class HomeViewController: BaseViewController {
     }
 }
 
-extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.results.count
     }

@@ -14,6 +14,6 @@ enum TableViewState {
 }
 
 enum ErrorState: Error {
-    case error(message: String?)
+    case error(message: String)
     case none
 }

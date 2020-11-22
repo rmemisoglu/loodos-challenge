@@ -9,7 +9,6 @@ import Foundation
 class HomeViewModel: BaseViewModel{
     private let service: APIService
     var results = [MovieResponse]()
-    var details: Dynamic<MovieResponse?> = Dynamic(nil)
     var routeFilmDetail: Dynamic<FilmDetailViewModel?> = Dynamic(nil)
     
     init(service: APIService) {
@@ -23,20 +22,24 @@ class HomeViewModel: BaseViewModel{
             case .success(let data):
                 if data.response == "True"{
                     print(data)
-                    self.results = data.search
+                    if let results = data.search{
+                        self.results = results
+                    }
                     self.state.value = .populate
                 } else if data.response == "False"{
                     print(data)
                     self.state.value = .error
+                    self.showError(message: data.error ?? "No result")
                 }
             case .failure(let error):
                 print(error.localizedDescription)
                 self.state.value = .error
+                self.showError(message: error.localizedDescription)
             }
         }
     }
 
-    private func showError(title: String? = nil, message: String? = nil) {
+    private func showError(message: String) {
         errorState.value = .error(message: message)
     }
 }

@@ -39,9 +39,10 @@ class FilmDetailViewController: BaseTableViewController {
         viewModel.getFilmDetail(by: viewModel.imdbId)
     }
     
-    func setupTableView(){
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 300
+    deinit {
+        viewModel.state.unbind()
+        viewModel.errorState.unbind()
+        viewModel.details.unbind()
     }
     
     func handleResult(with details: MovieResponse){
