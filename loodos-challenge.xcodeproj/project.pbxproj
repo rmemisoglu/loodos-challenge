@@ -10,10 +10,23 @@
 		1B9D0E4DFF5964F777BF4CDB /* Pods_loodos_challenge_loodos_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DE48B5D8E56A6E6CB734AE /* Pods_loodos_challenge_loodos_challengeUITests.framework */; };
 		39A88F8C7D8FC82BC19A5A3F /* Pods_loodos_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F611ACC338FB3A92561A5C /* Pods_loodos_challengeTests.framework */; };
 		5F8667CD73EE3780D7497164 /* Pods_loodos_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFCE80D54C2C091E2F73F42 /* Pods_loodos_challenge.framework */; };
-		F36CDA412566FCCD00D3DE51 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CDA402566FCCD00D3DE51 /* LaunchView.swift */; };
+		F3056A4C2568123D0089150C /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3056A4B2568123D0089150C /* ImageCache.swift */; };
+		F3D919CB2567D3F2003EE171 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919CA2567D3F2003EE171 /* AppCoordinator.swift */; };
+		F3D919D32567D419003EE171 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919D22567D419003EE171 /* BaseViewController.swift */; };
+		F3D919D82567D429003EE171 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919D72567D429003EE171 /* BaseViewModel.swift */; };
+		F3D919DD2567D438003EE171 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919DC2567D438003EE171 /* Dynamic.swift */; };
+		F3D919E22567D448003EE171 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919E12567D448003EE171 /* Enums.swift */; };
+		F3D919E72567D456003EE171 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919E62567D456003EE171 /* Protocols.swift */; };
+		F3D919EF2567D47E003EE171 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919EE2567D47E003EE171 /* Extensions.swift */; };
+		F3D919F42567D4AB003EE171 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919F32567D4AB003EE171 /* LoadingViewController.swift */; };
+		F3D91A022567E1C3003EE171 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A012567E1C3003EE171 /* NetworkService.swift */; };
+		F3D91A072567E388003EE171 /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A062567E388003EE171 /* PersistentManager.swift */; };
+		F3D91A0D2567E850003EE171 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A0C2567E850003EE171 /* SearchResult.swift */; };
+		F3D91A152567EB01003EE171 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A142567EB01003EE171 /* HomeViewModel.swift */; };
+		F3D91A302567F319003EE171 /* FilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A2F2567F319003EE171 /* FilmsTableViewCell.swift */; };
 		F3FBFD212566C29C00E56D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD202566C29C00E56D72 /* AppDelegate.swift */; };
 		F3FBFD232566C29C00E56D72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD222566C29C00E56D72 /* SceneDelegate.swift */; };
-		F3FBFD252566C29C00E56D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD242566C29C00E56D72 /* ViewController.swift */; };
+		F3FBFD252566C29C00E56D72 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD242566C29C00E56D72 /* HomeViewController.swift */; };
 		F3FBFD282566C29C00E56D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FBFD262566C29C00E56D72 /* Main.storyboard */; };
 		F3FBFD2A2566C29E00E56D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FBFD292566C29E00E56D72 /* Assets.xcassets */; };
 		F3FBFD382566C29E00E56D72 /* loodos_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD372566C29E00E56D72 /* loodos_challengeTests.swift */; };
@@ -50,11 +63,24 @@
 		98469B8FC5901DA6C1B8EA3B /* Pods-loodos-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge.release.xcconfig"; path = "Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge.release.xcconfig"; sourceTree = "<group>"; };
 		C571ACCBE3E18D462B4F447E /* Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-loodos-challenge-loodos-challengeUITests/Pods-loodos-challenge-loodos-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CD28BAE57085D79DD3E5156C /* Pods-loodos-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loodos-challenge.debug.xcconfig"; path = "Target Support Files/Pods-loodos-challenge/Pods-loodos-challenge.debug.xcconfig"; sourceTree = "<group>"; };
-		F36CDA402566FCCD00D3DE51 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		F3056A4B2568123D0089150C /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		F3D919CA2567D3F2003EE171 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F3D919D22567D419003EE171 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F3D919D72567D429003EE171 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F3D919DC2567D438003EE171 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		F3D919E12567D448003EE171 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		F3D919E62567D456003EE171 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		F3D919EE2567D47E003EE171 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F3D919F32567D4AB003EE171 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		F3D91A012567E1C3003EE171 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F3D91A062567E388003EE171 /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
+		F3D91A0C2567E850003EE171 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		F3D91A142567EB01003EE171 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F3D91A2F2567F319003EE171 /* FilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewCell.swift; sourceTree = "<group>"; };
 		F3FBFD1D2566C29C00E56D72 /* loodos-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loodos-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBFD202566C29C00E56D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FBFD222566C29C00E56D72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3FBFD242566C29C00E56D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3FBFD242566C29C00E56D72 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3FBFD272566C29C00E56D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3FBFD292566C29E00E56D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3FBFD2E2566C29E00E56D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +146,61 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F3D919C92567D3E0003EE171 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F3D919CA2567D3F2003EE171 /* AppCoordinator.swift */,
+				F3D919D22567D419003EE171 /* BaseViewController.swift */,
+				F3D919D72567D429003EE171 /* BaseViewModel.swift */,
+				F3D919DC2567D438003EE171 /* Dynamic.swift */,
+				F3D919E12567D448003EE171 /* Enums.swift */,
+				F3D919E62567D456003EE171 /* Protocols.swift */,
+				F3D919EE2567D47E003EE171 /* Extensions.swift */,
+				F3056A4B2568123D0089150C /* ImageCache.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F3D919FB2567E123003EE171 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3D919F32567D4AB003EE171 /* LoadingViewController.swift */,
+				F3FBFD922566F06900E56D72 /* LaunchScreenViewController.swift */,
+				F3FBFD242566C29C00E56D72 /* HomeViewController.swift */,
+				F3D91A142567EB01003EE171 /* HomeViewModel.swift */,
+				F3D91A2F2567F319003EE171 /* FilmsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3D919FC2567E149003EE171 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F3FBFD202566C29C00E56D72 /* AppDelegate.swift */,
+				F3FBFD222566C29C00E56D72 /* SceneDelegate.swift */,
+				F3FBFD292566C29E00E56D72 /* Assets.xcassets */,
+				F3FBFD262566C29C00E56D72 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F3D91A002567E1B8003EE171 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F3D91A012567E1C3003EE171 /* NetworkService.swift */,
+				F3D91A062567E388003EE171 /* PersistentManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F3D91A0B2567E802003EE171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3D91A0C2567E850003EE171 /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F3FBFD142566C29C00E56D72 = {
 			isa = PBXGroup;
 			children = (
@@ -146,15 +227,13 @@
 		F3FBFD1F2566C29C00E56D72 /* loodos-challenge */ = {
 			isa = PBXGroup;
 			children = (
-				F3FBFD202566C29C00E56D72 /* AppDelegate.swift */,
-				F3FBFD222566C29C00E56D72 /* SceneDelegate.swift */,
-				F3FBFD242566C29C00E56D72 /* ViewController.swift */,
-				F3FBFD262566C29C00E56D72 /* Main.storyboard */,
-				F3FBFD292566C29E00E56D72 /* Assets.xcassets */,
 				F3FBFD2E2566C29E00E56D72 /* Info.plist */,
 				F3FBFD8A2566EF6D00E56D72 /* GoogleService-Info.plist */,
-				F3FBFD922566F06900E56D72 /* LaunchScreenViewController.swift */,
-				F36CDA402566FCCD00D3DE51 /* LaunchView.swift */,
+				F3D91A0B2567E802003EE171 /* Model */,
+				F3D91A002567E1B8003EE171 /* Service */,
+				F3D919FC2567E149003EE171 /* Main */,
+				F3D919FB2567E123003EE171 /* View */,
+				F3D919C92567D3E0003EE171 /* Base */,
 			);
 			path = "loodos-challenge";
 			sourceTree = "<group>";
@@ -416,10 +495,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3FBFD252566C29C00E56D72 /* ViewController.swift in Sources */,
-				F36CDA412566FCCD00D3DE51 /* LaunchView.swift in Sources */,
+				F3D919CB2567D3F2003EE171 /* AppCoordinator.swift in Sources */,
+				F3FBFD252566C29C00E56D72 /* HomeViewController.swift in Sources */,
+				F3D919E22567D448003EE171 /* Enums.swift in Sources */,
+				F3D91A152567EB01003EE171 /* HomeViewModel.swift in Sources */,
+				F3D919DD2567D438003EE171 /* Dynamic.swift in Sources */,
+				F3D91A072567E388003EE171 /* PersistentManager.swift in Sources */,
 				F3FBFD212566C29C00E56D72 /* AppDelegate.swift in Sources */,
+				F3D91A0D2567E850003EE171 /* SearchResult.swift in Sources */,
+				F3D919E72567D456003EE171 /* Protocols.swift in Sources */,
+				F3D919EF2567D47E003EE171 /* Extensions.swift in Sources */,
 				F3FBFD932566F06900E56D72 /* LaunchScreenViewController.swift in Sources */,
+				F3D919D82567D429003EE171 /* BaseViewModel.swift in Sources */,
+				F3056A4C2568123D0089150C /* ImageCache.swift in Sources */,
+				F3D919D32567D419003EE171 /* BaseViewController.swift in Sources */,
+				F3D91A302567F319003EE171 /* FilmsTableViewCell.swift in Sources */,
+				F3D919F42567D4AB003EE171 /* LoadingViewController.swift in Sources */,
+				F3D91A022567E1C3003EE171 /* NetworkService.swift in Sources */,
 				F3FBFD232566C29C00E56D72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
