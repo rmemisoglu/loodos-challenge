@@ -17,7 +17,7 @@ class HomeViewController: BaseViewController {
     let searchController = UISearchController(searchResultsController: nil)
 
     var viewModel: HomeViewModel!
-    
+    var backgroundLabel = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewModel()
@@ -58,6 +58,14 @@ class HomeViewController: BaseViewController {
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 300
+        
+        backgroundLabel.frame = tableView.frame
+        backgroundLabel.text = "You can search movies.."
+        backgroundLabel.textAlignment = .center
+        backgroundLabel.textColor = .lightGray
+        backgroundLabel.numberOfLines = 0
+        backgroundLabel.font = .systemFont(ofSize: 32, weight: .light)
+        
     }
     
     func filterContentForSearchText(_ searchText: String) {
@@ -111,6 +119,11 @@ class HomeViewController: BaseViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if viewModel.results.count == 0 {
+            tableView.backgroundView = backgroundLabel
+        } else {
+            tableView.backgroundView = nil
+        }
         return viewModel.results.count
     }
     
