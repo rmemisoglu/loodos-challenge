@@ -127,15 +127,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="239"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-movie" translatesAutoresizingMaskIntoConstraints="NO" id="n5n-JN-TiG">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-movie" translatesAutoresizingMaskIntoConstraints="NO" id="xJj-qb-1L4">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="239"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="n5n-JN-TiG" firstAttribute="top" secondItem="vAh-9W-Iee" secondAttribute="top" id="1lJ-vT-hRU"/>
-                                                <constraint firstAttribute="bottom" secondItem="n5n-JN-TiG" secondAttribute="bottom" id="7LN-WF-WU8"/>
-                                                <constraint firstItem="n5n-JN-TiG" firstAttribute="leading" secondItem="vAh-9W-Iee" secondAttribute="leading" id="JEE-XI-x2H"/>
-                                                <constraint firstAttribute="trailing" secondItem="n5n-JN-TiG" secondAttribute="trailing" id="chA-Tq-ro2"/>
+                                                <constraint firstItem="xJj-qb-1L4" firstAttribute="top" secondItem="vAh-9W-Iee" secondAttribute="top" id="4fy-o0-lqF"/>
+                                                <constraint firstAttribute="bottom" secondItem="xJj-qb-1L4" secondAttribute="bottom" id="YMd-L8-TXs"/>
+                                                <constraint firstAttribute="trailing" secondItem="xJj-qb-1L4" secondAttribute="trailing" id="eXz-1F-7PO"/>
+                                                <constraint firstItem="xJj-qb-1L4" firstAttribute="leading" secondItem="vAh-9W-Iee" secondAttribute="leading" id="tod-YN-7FG"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -148,17 +148,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgs-uE-StL">
-                                                    <rect key="frame" x="16" y="8" width="382" height="36"/>
+                                                    <rect key="frame" x="16" y="16" width="382" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Fgs-uE-StL" secondAttribute="trailing" constant="16" id="QQX-I2-AYM"/>
-                                                <constraint firstItem="Fgs-uE-StL" firstAttribute="top" secondItem="kyf-6U-sSG" secondAttribute="top" constant="8" id="dAL-hs-QeC"/>
-                                                <constraint firstAttribute="bottom" secondItem="Fgs-uE-StL" secondAttribute="bottom" id="iTJ-wc-nAl"/>
-                                                <constraint firstItem="Fgs-uE-StL" firstAttribute="leading" secondItem="kyf-6U-sSG" secondAttribute="leading" constant="16" id="qTx-wP-lcB"/>
+                                                <constraint firstItem="Fgs-uE-StL" firstAttribute="leading" secondItem="kyf-6U-sSG" secondAttribute="leading" constant="16" id="8aX-DQ-vbq"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fgs-uE-StL" secondAttribute="trailing" constant="16" id="Kqv-lA-7VS"/>
+                                                <constraint firstAttribute="bottom" secondItem="Fgs-uE-StL" secondAttribute="bottom" constant="8" id="Rhy-hf-4nu"/>
+                                                <constraint firstItem="Fgs-uE-StL" firstAttribute="top" secondItem="kyf-6U-sSG" secondAttribute="top" constant="16" id="V9z-Pf-aMl"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -547,7 +547,7 @@
                         <outlet property="directorLabel" destination="mwk-TB-2R8" id="Uyj-zZ-NLD"/>
                         <outlet property="genreLabel" destination="R43-jq-xDC" id="bc7-jJ-l62"/>
                         <outlet property="plotLabel" destination="Cbt-nY-YPx" id="Xen-j6-jfp"/>
-                        <outlet property="posterImageView" destination="n5n-JN-TiG" id="cu1-DX-ucG"/>
+                        <outlet property="posterImageView" destination="xJj-qb-1L4" id="HAE-hm-oa0"/>
                         <outlet property="ratingLabel" destination="ra0-PA-yBQ" id="Ybf-cc-wFX"/>
                         <outlet property="seasonsLabel" destination="SSB-C0-HSm" id="CSx-8M-b9f"/>
                         <outlet property="titleLabel" destination="Fgs-uE-StL" id="LhN-od-RjU"/>

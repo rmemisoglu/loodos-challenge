@@ -85,7 +85,6 @@ extension UIViewController {
     
     /// An extension add child view controller and move parent
     /// - Returns: void
-    /// - Author: Remzi Yildirim
     func add(_ child: UIViewController) {
         addChild(child)
         view.addSubview(child.view)
@@ -94,7 +93,6 @@ extension UIViewController {
     
     /// An extension remove from parent view and viewcontroller
     /// - Returns: void
-    /// - Author: Remzi Yildirim
     func remove() {
         guard parent != nil else {
             return
@@ -106,7 +104,6 @@ extension UIViewController {
     
     /// An extension add child view controller to containerview
     /// - Returns: void
-    /// - Author: Remzi Yildirim
     func addChild(to containerView: UIView, _ child: UIViewController) {
         /// view controller view to containerview
         addChild(child)
@@ -114,4 +111,11 @@ extension UIViewController {
         containerView.addSubview(child.view)
         child.didMove(toParent: self)
     }
+}
+
+extension Encodable {
+  var dictionary: [String: Any]? {
+    guard let data = try? JSONEncoder().encode(self) else { return nil }
+    return (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)).flatMap { $0 as? [String: Any] }
+  }
 }

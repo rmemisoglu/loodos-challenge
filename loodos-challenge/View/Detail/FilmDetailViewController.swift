@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FilmDetailViewController: BaseTableViewController {
     @IBOutlet weak var posterImageView: UIImageView!
@@ -22,9 +23,14 @@ class FilmDetailViewController: BaseTableViewController {
     @IBOutlet weak var seasonsLabel: UILabel!
     
     var viewModel: FilmDetailViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewModel()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     private func setupViewModel() {
@@ -32,9 +38,33 @@ class FilmDetailViewController: BaseTableViewController {
         viewModel.state.bind { [unowned self] in
             self.stateAnimate($0)
         }
+        
         viewModel.details.bind { [unowned self] in
             guard let details = $0 else { return }
-            self.handleResult(with: details)
+            self.logData(with: details)
+        }
+        
+        viewModel.updateView.bind{ [unowned self] in
+            if $0{
+                guard let details = viewModel.details.value else {return}
+                
+                if details.poster == Constants.Default.na{
+                    self.posterImageView.image = #imageLiteral(resourceName: "default-movie")
+                } else {
+                    self.posterImageView.loadAndCacheImage(url: details.poster)
+                }
+                self.titleLabel.text = details.title.uppercased()
+                self.yearLabel.text = details.released
+                self.typeLabel.text = details.type
+                self.genreLabel.text = details.genre
+                self.ratingLabel.text = "\(details.imdbRating ?? Constants.Default.na) in \(details.imdbVotes ?? Constants.Default.na) votes"
+                self.plotLabel.text = details.plot
+                self.actorsLabel.text = details.actors
+                self.writterLabel.text = details.writer
+                self.directorLabel.text = details.director
+                self.awardsLabel.text = details.awards
+                self.seasonsLabel.text = details.totalSeasons ?? Constants.Default.na
+            }
         }
         viewModel.getFilmDetail(by: viewModel.imdbId)
     }
@@ -45,23 +75,9 @@ class FilmDetailViewController: BaseTableViewController {
         viewModel.details.unbind()
     }
     
-    func handleResult(with details: MovieResponse){
-        if details.poster == Constants.Default.na{
-            posterImageView.image = #imageLiteral(resourceName: "default-movie")
-        } else {
-            posterImageView.loadAndCacheImage(url: details.poster)
-        }
-        titleLabel.text = details.title?.uppercased()
-        yearLabel.text = details.released
-        typeLabel.text = details.type
-        genreLabel.text = details.genre
-        ratingLabel.text = "\(details.imdbRating ?? Constants.Default.na) in \(details.imdbVotes ?? Constants.Default.na) votes"
-        plotLabel.text = details.plot
-        actorsLabel.text = details.actors
-        writterLabel.text = details.writer
-        directorLabel.text = details.director
-        awardsLabel.text = details.awards
-        seasonsLabel.text = details.totalSeasons
+    func logData(with details: MovieResponse){
+        guard let log = details.dictionary else { return }
+        Analytics.logEvent("movie_detail", parameters: log)
     }
     
     private func stateAnimate(_ state: TableViewState) {

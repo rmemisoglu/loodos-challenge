@@ -21,7 +21,9 @@ struct SearchResponse: Model {
 }
 
 struct MovieResponse: Model {
-    var title, year, rated, released: String?
+    var title: String
+    var year: String
+    var rated, released: String?
     var runtime, genre, director, writer: String?
     var actors, plot, language, country: String?
     var awards: String?

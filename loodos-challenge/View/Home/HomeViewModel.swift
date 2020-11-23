@@ -17,24 +17,25 @@ class HomeViewModel: BaseViewModel{
     
     func getFilms(with title: String) {
         state.value = .loading
-        service.getFilms(with: title) { (response) in
-            switch response{
+        service.getFilms(with: title) { [weak self] in
+            guard let strongSelf = self else { return }
+            switch $0{
             case .success(let data):
                 if data.response == "True"{
                     print(data)
                     if let results = data.search{
-                        self.results = results
+                        strongSelf.results = results
                     }
-                    self.state.value = .populate
+                    strongSelf.state.value = .populate
                 } else if data.response == "False"{
                     print(data)
-                    self.state.value = .error
-                    self.showError(message: data.error ?? "No result")
+                    strongSelf.state.value = .error
+                    strongSelf.showError(message: data.error ?? "No result")
                 }
             case .failure(let error):
                 print(error.localizedDescription)
-                self.state.value = .error
-                self.showError(message: error.localizedDescription)
+                strongSelf.state.value = .error
+                strongSelf.showError(message: error.localizedDescription)
             }
         }
     }

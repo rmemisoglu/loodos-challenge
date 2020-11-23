@@ -23,7 +23,7 @@
 		F3D919F42567D4AB003EE171 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D919F32567D4AB003EE171 /* LoadingViewController.swift */; };
 		F3D91A022567E1C3003EE171 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A012567E1C3003EE171 /* NetworkService.swift */; };
 		F3D91A072567E388003EE171 /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A062567E388003EE171 /* PersistentManager.swift */; };
-		F3D91A0D2567E850003EE171 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A0C2567E850003EE171 /* SearchResult.swift */; };
+		F3D91A0D2567E850003EE171 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A0C2567E850003EE171 /* SearchResponse.swift */; };
 		F3D91A152567EB01003EE171 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A142567EB01003EE171 /* HomeViewModel.swift */; };
 		F3D91A302567F319003EE171 /* FilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A2F2567F319003EE171 /* FilmsTableViewCell.swift */; };
 		F3FBFD212566C29C00E56D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBFD202566C29C00E56D72 /* AppDelegate.swift */; };
@@ -78,7 +78,7 @@
 		F3D919F32567D4AB003EE171 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		F3D91A012567E1C3003EE171 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F3D91A062567E388003EE171 /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
-		F3D91A0C2567E850003EE171 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		F3D91A0C2567E850003EE171 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		F3D91A142567EB01003EE171 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F3D91A2F2567F319003EE171 /* FilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewCell.swift; sourceTree = "<group>"; };
 		F3FBFD1D2566C29C00E56D72 /* loodos-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loodos-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +158,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		F367669E256B231900A9AF2B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3FBFD242566C29C00E56D72 /* HomeViewController.swift */,
+				F3D91A142567EB01003EE171 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F367669F256B233300A9AF2B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F324153D256A75A40039BE25 /* FilmDetailViewController.swift */,
+				F3676696256AF5E800A9AF2B /* FilmDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		F3D919C92567D3E0003EE171 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,12 +194,10 @@
 		F3D919FB2567E123003EE171 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F367669E256B231900A9AF2B /* Home */,
+				F367669F256B233300A9AF2B /* Detail */,
 				F3D919F32567D4AB003EE171 /* LoadingViewController.swift */,
 				F3FBFD922566F06900E56D72 /* LaunchScreenViewController.swift */,
-				F3FBFD242566C29C00E56D72 /* HomeViewController.swift */,
-				F3D91A142567EB01003EE171 /* HomeViewModel.swift */,
-				F324153D256A75A40039BE25 /* FilmDetailViewController.swift */,
-				F3676696256AF5E800A9AF2B /* FilmDetailViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,7 +225,7 @@
 		F3D91A0B2567E802003EE171 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F3D91A0C2567E850003EE171 /* SearchResult.swift */,
+				F3D91A0C2567E850003EE171 /* SearchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,8 +261,8 @@
 				F3D91A0B2567E802003EE171 /* Model */,
 				F3D91A002567E1B8003EE171 /* Service */,
 				F3D919FC2567E149003EE171 /* Main */,
-				F3D919FB2567E123003EE171 /* View */,
 				F3D919C92567D3E0003EE171 /* Base */,
+				F3D919FB2567E123003EE171 /* View */,
 				F3241542256A855D0039BE25 /* Cell */,
 			);
 			path = "loodos-challenge";
@@ -516,7 +532,7 @@
 				F3D919DD2567D438003EE171 /* Dynamic.swift in Sources */,
 				F3D91A072567E388003EE171 /* PersistentManager.swift in Sources */,
 				F3FBFD212566C29C00E56D72 /* AppDelegate.swift in Sources */,
-				F3D91A0D2567E850003EE171 /* SearchResult.swift in Sources */,
+				F3D91A0D2567E850003EE171 /* SearchResponse.swift in Sources */,
 				F3D919E72567D456003EE171 /* Protocols.swift in Sources */,
 				F3D919EF2567D47E003EE171 /* Extensions.swift in Sources */,
 				F3FBFD932566F06900E56D72 /* LaunchScreenViewController.swift in Sources */,
